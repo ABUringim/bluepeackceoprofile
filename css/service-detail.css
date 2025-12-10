@@ -1,0 +1,190 @@
+.service-hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: var(--white);
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+.service-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service-hero p {
+    font-size: 1.25rem;
+}
+
+.service-content {
+    padding: 60px 0;
+}
+
+.service-video {
+    margin-bottom: 60px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-description,
+.problems-solved,
+.features-benefits,
+.our-process {
+    margin-bottom: 60px;
+}
+
+.service-description h2,
+.problems-solved h2,
+.features-benefits h2,
+.our-process h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
+}
+
+.problems-solved ul {
+    list-style: none;
+    padding: 0;
+}
+
+.problems-solved li {
+    padding: 1rem 0 1rem 2.5rem;
+    position: relative;
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.problems-solved li:before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-box {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.feature-box p {
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.step {
+    text-align: center;
+    padding: 2rem;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.step p {
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+.service-cta {
+    background: var(--light-color);
+    padding: 4rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.service-cta h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.service-cta p {
+    font-size: 1.25rem;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .service-hero h1 {
+        font-size: 2rem;
+    }
+
+    .service-description h2,
+    .problems-solved h2,
+    .features-benefits h2,
+    .our-process h2,
+    .service-cta h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid,
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .service-cta {
+        padding: 2rem;
+    }
+}
