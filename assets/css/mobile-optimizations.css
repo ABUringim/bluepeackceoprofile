@@ -1,0 +1,340 @@
+/* Mobile-Specific Optimizations */
+
+/* Prevent text size adjustment on orientation change */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Improve tap highlight */
+* {
+    -webkit-tap-highlight-color: rgba(0, 86, 179, 0.2);
+    -webkit-touch-callout: none;
+}
+
+/* Smooth scrolling for mobile */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Safe area for notched devices */
+body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Improve button touch targets */
+.btn,
+button,
+a {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Mobile-specific utilities */
+@media (max-width: 768px) {
+    /* Hide on mobile */
+    .hide-mobile {
+        display: none !important;
+    }
+    
+    /* Show only on mobile */
+    .show-mobile {
+        display: block !important;
+    }
+    
+    /* Full width on mobile */
+    .mobile-full-width {
+        width: 100% !important;
+    }
+    
+    /* Reduce padding on mobile */
+    .mobile-padding-sm {
+        padding: 1rem !important;
+    }
+    
+    /* Stack columns on mobile */
+    .mobile-stack > * {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Touch-friendly spacing */
+@media (max-width: 576px) {
+    /* Increase spacing between interactive elements */
+    .btn + .btn {
+        margin-top: 0.75rem;
+    }
+    
+    /* Larger touch targets */
+    .nav-link,
+    .btn,
+    button,
+    a[role="button"] {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Improve form inputs */
+    input,
+    textarea,
+    select {
+        font-size: 16px !important; /* Prevent zoom on iOS */
+        padding: 0.75rem;
+    }
+    
+    /* Better modal on mobile */
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .modal-content {
+        border-radius: 15px;
+    }
+    
+    /* Improve table responsiveness */
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Reduce vertical spacing in landscape */
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .hero-section {
+        min-height: auto !important;
+    }
+    
+    /* Smaller text in landscape */
+    h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* High DPI screens (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Sharper borders */
+    .card,
+    .btn,
+    .award-card {
+        border-width: 0.5px;
+    }
+}
+
+/* Dark mode support for mobile */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles if needed */
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+    /* Fix iOS Safari bottom bar issue */
+    .hero-section {
+        min-height: -webkit-fill-available;
+    }
+    
+    /* Fix iOS input shadow */
+    input,
+    textarea {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    
+    /* Fix iOS button styling */
+    button,
+    .btn {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+/* Android specific fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    /* Android Chrome address bar compensation */
+    .hero-section {
+        min-height: calc(100vh - 56px);
+    }
+}
+
+/* Improve performance on mobile */
+.award-card,
+.credential-card,
+.timeline-content {
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .offcanvas-body {
+        padding: 1.5rem;
+    }
+    
+    .offcanvas-body .nav-link {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 1.1rem;
+    }
+}
+
+/* Improve image loading on mobile */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .portrait-mask img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* Mobile-friendly cards */
+@media (max-width: 576px) {
+    .card {
+        border-radius: 12px;
+        margin-bottom: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-header {
+        padding: 1rem;
+    }
+}
+
+/* Sticky elements on mobile */
+@media (max-width: 768px) {
+    .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+}
+
+/* Mobile typography improvements */
+@media (max-width: 576px) {
+    body {
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+    
+    /* Better readability */
+    .lead {
+        line-height: 1.7;
+    }
+}
+
+/* Touch-friendly hover states */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .award-card:hover,
+    .credential-card:hover,
+    .expertise-card:hover {
+        transform: none;
+    }
+    
+    /* Add active states instead */
+    .award-card:active,
+    .credential-card:active,
+    .expertise-card:active {
+        transform: scale(0.98);
+        opacity: 0.9;
+    }
+}
+
+/* Improve scrollbar on mobile */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 86, 179, 0.3);
+        border-radius: 2px;
+    }
+}
+
+/* Loading states for mobile */
+.loading {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Mobile-friendly spacing utilities */
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .mt-5 {
+        margin-top: 2rem !important;
+    }
+}

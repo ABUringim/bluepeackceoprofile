@@ -1,0 +1,14 @@
+{
+  "socialLinks": {
+    "linkedin": "#",
+    "twitter": "#",
+    "email": "mailto:[email@example.com]",
+    "website": "#"
+  },
+  "contactInfo": {
+    "email": "[email@example.com]",
+    "phone": "[+123 456 7890]",
+    "location": "[City, Country]",
+    "availability": "Available for consultations and speaking engagements"
+  }
+}

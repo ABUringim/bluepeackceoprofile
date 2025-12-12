@@ -1,0 +1,52 @@
+{
+  "personalInfo": {
+    "name": "Ibrahim Kamilu",
+    "title": "Founder & CEO | International Relations Specialist",
+    "highlightBadge": "UNESCO Award Recipient",
+    "email": "[email@example.com]",
+    "phone": "[+123 456 7890]",
+    "location": "[City, Country]"
+  },
+  "professionalSummary": "As Founder and CEO with a Bachelor's Degree in International Relations, I bridge strategic leadership with global perspective. My work has been recognized by UNESCO and international bodies for creating meaningful impact across sectors.",
+  "stats": {
+    "yearsExperience": 15,
+    "internationalAwards": 4,
+    "projectsCompleted": 50,
+    "globalPartnerships": 100
+  },
+  "socialProofBadges": [
+    {
+      "icon": "🏆",
+      "text": "4 International Awards"
+    },
+    {
+      "icon": "🎓",
+      "text": "International Relations"
+    },
+    {
+      "icon": "🌍",
+      "text": "Global Impact"
+    },
+    {
+      "icon": "✓",
+      "text": "Verified Excellence"
+    }
+  ],
+  "expertiseAreas": [
+    {
+      "icon": "🌍",
+      "title": "International Relations",
+      "description": "Diplomacy, global governance, and cross-cultural communication"
+    },
+    {
+      "icon": "💼",
+      "title": "Strategic Leadership",
+      "description": "Executive management, organizational development, and business strategy"
+    },
+    {
+      "icon": "🤝",
+      "title": "Conflict Resolution",
+      "description": "Mediation, peace-building, and stakeholder engagement"
+    }
+  ]
+}

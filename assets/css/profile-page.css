@@ -1,0 +1,133 @@
+/* Profile Page Styles */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-emerald));
+    color: var(--white);
+    padding: 150px 0 80px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.biography-section {
+    background: var(--bg-color);
+}
+
+.profile-image-container {
+    position: relative;
+}
+
+.profile-image-container img {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.verified-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent-emerald);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.expertise-section {
+    background: var(--white);
+}
+
+.expertise-card {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.expertise-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.expertise-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 120px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-header .lead {
+        font-size: 1.1rem;
+    }
+    
+    .biography-section {
+        padding: 2rem 0;
+    }
+    
+    .expertise-section {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header .lead {
+        font-size: 1rem;
+    }
+    
+    .biography-section h2,
+    .expertise-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .biography-section p {
+        font-size: 0.95rem;
+    }
+    
+    .verified-badge {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .expertise-card {
+        padding: 1.5rem;
+    }
+    
+    .expertise-icon {
+        font-size: 2.5rem;
+    }
+    
+    .expertise-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .expertise-card p {
+        font-size: 0.9rem;
+    }
+}

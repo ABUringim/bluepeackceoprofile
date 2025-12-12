@@ -1,310 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="ABU IT TECH LTD - Your All-in-One Technology Partner for Business Growth in Nigeria. Expert IT Support, Software Development, Digital Marketing & Business Solutions.">
-    <title>ABU IT TECH LTD - Technology Partner for Business Growth</title>
-    <meta name="theme-color" content="#2563eb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0056B3">
+    <title>Ibrahim Kamilu</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">""
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/template-styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/mobile-optimizations.css">
 </head>
 
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="logo">
-                        <img src="images/logo.jpg" alt="ABU IT TECH LTD Logo">
-                        <span>ABU IT TECH LTD</span>
-                    </div>
-                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav-menu">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="services.html">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services.html#managed-it">Managed IT Services</a></li>
-                                <li><a href="services.html#software-dev">Software Development</a></li>
-                                <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
-                                <li><a href="services.html#infrastructure">Infrastructure & Security</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                </div>
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Ibrahim Kamilu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="profile-summary mb-4">
+                <p class="small text-muted">Founder & CEO | BLUE PEAK GLOBAL INVESTMENT LIMITED</p>
             </div>
-        </nav>
-    </header>
+           
+       
+        </div>
+    </div>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Your All-in-One Technology Partner for Business Growth</h1>
-                <p>Empowering Nigerian businesses with cutting-edge IT solutions, software development, digital
-                    marketing, and comprehensive business services.</p>
-                <div class="hero-cta">
-                    <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Consultation</a>
-                    <a href="services.html" class="btn btn-secondary btn-lg">Explore Our Services</a>
+    <section class="hero-section" id="hero">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-5 hero-image-col" data-aos="fade-right">
+                    <div class="portrait-frame">
+                        <div class="portrait-mask">
+                            <img src="images/ibrahim-kamilu.PNG" alt="Ibrahim Kamilu" class="img-fluid">
+                        </div>
+                        <div class="frame-decoration"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 hero-content-col" data-aos="fade-left" data-aos-delay="200">
+                    <p class="hero-prefix">Introducing</p>
+                    <h1 class="hero-name" id="heroName">Ibrahim Kamilu</h1>
+                    <div class="title-ribbon">
+                        <span>Founder & CEO | BLUE PEAK GLOBAL INVESTMENT LIMITED</span>
+                    </div>
+                    <div class="achievement-highlight">
+                        <span class="badge-unesco">Appointment From Deputy President of the Nigerian Senate</span>
+                    </div>
+                    <div class="social-proof-badges mt-4">
+                        <div class="badge-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="badge-icon">🏆</div>
+                            <div class="badge-text">4 International Awards</div>
+                        </div>
+                        <div class="badge-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="badge-icon">🎓</div>
+                            <div class="badge-text">International Relations</div>
+                        </div>
+                        <div class="badge-item" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="badge-icon">🌍</div>
+                            <div class="badge-text">Global Impact</div>
+                        </div>
+                        <div class="badge-item" data-aos="zoom-in" data-aos-delay="700">
+                            <div class="badge-icon">✓</div>
+                            <div class="badge-text">Verified Excellence</div>
+                        </div>
+                    </div>
+               
                 </div>
             </div>
         </div>
+      
     </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
+    <!-- Quick Stats Section -->
+    <section class="stats-section py-5">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive technology solutions tailored to your business needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3>Managed IT Services</h3>
-                    <p>24/7 IT support, cloud solutions, cybersecurity, and network management to keep your business
-                        running smoothly.</p>
-                    <a href="services.html#managed-it" class="service-link">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Software Development</h3>
-                    <p>Custom software, web applications, mobile apps, and e-commerce solutions built to your
-                        specifications.</p>
-                    <a href="services.html#software-dev" class="service-link">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3>Digital Marketing</h3>
-                    <p>SEO, social media management, email marketing, and comprehensive digital strategies to grow your
-                        brand.</p>
-                    <a href="services.html#digital-marketing" class="service-link">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Infrastructure & Security</h3>
-                    <p>Network design, server management, CCTV installation, and NDPA-compliant data protection
-                        solutions.</p>
-                    <a href="services.html#infrastructure" class="service-link">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h3>Business Solutions</h3>
-                    <p>Payroll software, accounting tools, business registration, and management systems for operational
-                        excellence.</p>
-                    <a href="services.html#business-solutions" class="service-link">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                        </svg>
-                    </div>
-                    <h3>IoT & Analytics</h3>
-                    <p>Internet of Things solutions, data analytics, and business intelligence to drive informed
-                        decisions.</p>
-                    <a href="services.html#iot-analytics" class="service-link">Learn More →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose ABU IT TECH LTD?</h2>
-                <p>Your trusted technology partner in Nigeria</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-                    <h3>Experienced Team</h3>
-                    <p>Skilled professionals with years of expertise in IT and business solutions</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock assistance to ensure your business never stops</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-                    <h3>Customized Solutions</h3>
-                    <p>Tailored services designed to meet your unique business requirements</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-                    <h3>NDPA Compliant</h3>
-                    <p>Full compliance with Nigeria Data Protection Act for your security</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-                    <h3>Local Expertise</h3>
-                    <p>Deep understanding of Nigerian business landscape and challenges</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-                    <h3>Proven Track Record</h3>
-                    <p>Successfully delivered projects for SMEs across Kano State and Nigeria</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Trusted by businesses across Nigeria</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"ABU IT TECH LTD transformed our business operations with their custom software solution.
-                            Their team is professional, responsive, and truly understands our needs."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <strong>Musa Ibrahim</strong>
-                        <span>CEO, Retail Solutions Ltd</span>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up">
+                    <div class="stat-card">
+                        <h2 class="stat-number" data-count="15">0</h2>
+                        <p class="stat-label">Years Experience</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The managed IT support has been a game-changer. We no longer worry about technical issues,
-                            and their 24/7 support gives us peace of mind."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <strong>Fatima Yusuf</strong>
-                        <span>Operations Manager, TechHub Kano</span>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <h2 class="stat-number" data-count="4">0</h2>
+                        <p class="stat-label">International Awards</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Their digital marketing services helped us reach new customers and grow our online presence
-                            significantly. Highly recommended!"</p>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <h2 class="stat-number" data-count="50">0</h2>
+                        <p class="stat-label">Projects Completed</p>
                     </div>
-                    <div class="testimonial-author">
-                        <strong>Ahmed Sani</strong>
-                        <span>Founder, E-commerce Ventures</span>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <h2 class="stat-number" data-count="100">0</h2>
+                        <p class="stat-label">Global Partnerships</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Professional Summary Section -->
+    <section class="summary-section py-5">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Let's discuss how our technology solutions can help you achieve your business goals</p>
-                <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="summary-content" data-aos="fade-up">
+                        <h2 class="section-title text-center mb-5">Professional Excellence</h2>
+                        <p class="lead text-center">
+                            Ibrahim Kamilu i'm distinguished leader who uniquely combines high-level public service with entrepreneurial vision. I operates at the apex of Nigeria's legislative governance as a Special Assistant to the Deputy President of the Senate while simultaneously founding and leading Blue Peak Global Investment Limited, a dynamic firm dedicated to strategic capital deployment. This dual expertise allows him to bridge policy formulation with economic opportunity, driving initiatives that foster national development from both the public and private sectors. A proud son of Kano, i career is a testament to strategic leadership, integrity, and a deep commitment to Nigeria's growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Awards Preview -->
+    <section class="featured-awards-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Appointments & Aword</h2>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="zoom-in">
+                    <div class="award-card award-unesco">
+                        <div class="award-badge">Appointment From Deputy President of the Senate </div>
+                       
+                        <h3>Special Assistant to the Deputy President of the Senate </h3>
+                        <p>of the Federal Republic of Nigeria.</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="award-card award-peace">
+                     
+                        <h3>Tinubu Care and Concern</h3>
+                        <p> Counsel Adviser </p>
+                      
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="award-card award-tuc">
+                    
+                        <h3>Award From Center For Human Rights</h3>
+                        <p>Humanitarian Leadership and Community Development</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="award-card award-kano">
+                        <div class="award-icon">🏢</div>
+                        <h3>Kano Contractors Association</h3>
+                        <p>Business Excellence and Economic Contribution</p>
+                       
+                    </div>
+                </div>
+                
+            </div>
+            <div class="text-center mt-5">
+                <a href="pages/awards.html" class="btn btn-primary btn-lg">View All Awards</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer py-5">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <img src="images/logo.png" alt="ABU IT TECH LTD">
-                        <span>ABU IT TECH LTD</span>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Ibrahim Kamilu</h5>
+                    <p class="text-wight">Founder & CEO | BLUE PEAK GLOBAL INVESTMENT LIMITED</p>
+                </div>
+               
+                <div class="col-lg-4 mb-4">
+                    <h5>Connect</h5>
+                    <div class="social-links">
+                        <a href="http://linkedin.com/in/kamilu-ibrahim-9a21aa398">LinkedIn</a>
+                         <a href="https://www.facebook.com/share/1Eb2Go7rAk/?mibextid=wwXIfr">Facebook</a>
+                        <a href="https://www.instagram.com/ibrahim25153?igsh=MW1ocXpxOWJwamo5cQ%3D%3D&utm_source=qr">Instagram</a>
+                        <a href="https://www.kamiluismail37@gmail.com">Email</a>
                     </div>
-                    <p>Your trusted technology partner for business growth in Nigeria.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#managed-it">Managed IT Support</a></li>
-                        <li><a href="services.html#software-dev">Software Development</a></li>
-                        <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
-                        <li><a href="services.html#infrastructure">Infrastructure</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <ul class="contact-info">
-                        <li>Tashan Gidan Zoo, Zoo Road</li>
-                        <li>By Tukuntawa Junction</li>
-                        <li>Kano State, Nigeria</li>
-                        <li>Email: aburingim1997@gmail.com</li>
-                        <li>Phone: +234 7075998251</li>
-                    </ul>
-                </div>
+                 <div class="col-lg-4 mb-4">
+                  <h5>Designed & Developed By</h5>
+                    <p>
+                     <a href="http://abuittechltd.com">ABU IT TECH LTD</a>
+                     </p>
+    <a href="https://www.abuittechltd.com" target="_blank" class="footer-logo-link">
+        <img src="images/abuittechltd.png" 
+             alt="Your Company Name" 
+        class="footer-logo">
+    </a>
+</div>
+
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ABU IT TECH LTD. All rights reserved.</p>
-            </div>
+           
+            
+<style>
+    .company-footer-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 15px 0;
+    }
+    
+    .footer-logo-link {
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+    
+    .footer-logo-link:hover {
+        transform: translateY(-2px);
+    }
+    
+    .footer-logo {
+        height: 50px; /* Adjust height as needed */
+        width: auto;
+        display: block;
+    }
+    
+    .footer-text {
+        line-height: 1.4;
+    }
+    
+    .company-name {
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .company-tagline {
+        color: #666;
+        margin: 0;
+        font-size: 14px;
+    }
+</style>
+          
+            
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-</body>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/template-functions.js"></script>
+</body>
 </html>

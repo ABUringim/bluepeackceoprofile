@@ -1,0 +1,12 @@
+{
+  "colorScheme": {
+    "primary": "#0056B3",
+    "secondary": "#FFD700",
+    "accentEmerald": "#006D5B",
+    "accentGray": "#4A5568",
+    "background": "#FAFAFA",
+    "textColor": "#1A202C",
+    "white": "#FFFFFF"
+  },
+  "description": "Customize the color palette by modifying these hex values. Update the CSS custom properties in template-styles.css to apply changes."
+}

@@ -1,0 +1,52 @@
+{
+  "awards": [
+    {
+      "id": "unesco",
+      "name": "UNESCO Award",
+      "year": 2023,
+      "category": "international",
+      "icon": "🌐",
+      "title": "Global Excellence in Education",
+      "description": "Recognized by UNESCO for outstanding contributions to education and cultural preservation initiatives across multiple continents.",
+      "organization": "UNESCO",
+      "verified": true,
+      "certificatePath": "assets/images/awards/unesco-cert.jpg"
+    },
+    {
+      "id": "peace",
+      "name": "International Peace Award",
+      "year": 2022,
+      "category": "international humanitarian",
+      "icon": "🕊️",
+      "title": "Contributions to Global Harmony",
+      "description": "Honored for exceptional work in promoting international understanding and peace-building initiatives.",
+      "organization": "International Peace Foundation",
+      "verified": true,
+      "certificatePath": "assets/images/awards/peace-cert.jpg"
+    },
+    {
+      "id": "tuc",
+      "name": "TUC Humanitarian Award",
+      "year": 2021,
+      "category": "humanitarian",
+      "icon": "❤️",
+      "title": "Community Development Leadership",
+      "description": "Awarded for transformative humanitarian leadership and sustainable community development programs.",
+      "organization": "TUC",
+      "verified": true,
+      "certificatePath": "assets/images/awards/tuc-cert.jpg"
+    },
+    {
+      "id": "kano",
+      "name": "Kano Contractors Association",
+      "year": 2020,
+      "category": "business",
+      "icon": "🏢",
+      "title": "Business Excellence Award",
+      "description": "Recognized for outstanding business leadership and significant economic contributions to regional development.",
+      "organization": "Kano Contractors Association",
+      "verified": true,
+      "certificatePath": "assets/images/awards/kano-cert.jpg"
+    }
+  ]
+}
